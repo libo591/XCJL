@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/root_layout"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"  >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="90dip"
+        android:layout_marginBottom="90dip"
+        android:layout_gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#506bff">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_gravity="center"
+            android:background="@drawable/chart_input_icon"
+            android:contentDescription="@string/headImage" />
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="50dip"
+            android:layout_marginRight="50dip"
+            android:layout_marginBottom="10dip"  >
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:hint="@string/phoneNumberAndEmailHint"
+                android:text="@string/phoneNumberOrEmail"
+                android:id="@+id/phoneNumberOrEmailEditText"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="#91ff59"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:editable="true" />
+        </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="50dip"
+        android:layout_marginBottom="10dip"  >
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="@string/pwd"
+            android:id="@+id/pwdEditText"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:hint="@string/passwordHint"
+            android:layout_weight="1"
+            android:textSize="16sp"
+
+            android:background="#ffc1d4"
+            android:editable="true" />
+
+        </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="50dip"
+        android:layout_marginBottom="20dip" >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="@string/loginButtonText"
+            android:textSize="16sp"
+            android:id="@+id/logInButton"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#2fff49" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+</FrameLayout>
